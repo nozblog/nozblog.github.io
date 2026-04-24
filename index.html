@@ -3,36 +3,188 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>nozblog</title>
+
+  <title>のずブログ | Windows・PCトラブル解決ブログ</title>
+  <meta name="description" content="Windowsアップデートが終わらない、PCが重い、エラーが出るなど、初心者にも分かりやすく解決方法を紹介するブログです。">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>nozblog</h1>
-    <p class="subtitle">パソコンやWindowsの困りごとを、初心者向けに分かりやすくまとめるサイト</p>
+
+  <!-- ヘッダー -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="site-logo">
+        <a href="index.html">のずブログ</a>
+      </div>
+
+      <nav class="global-nav">
+        <ul>
+          <li><a href="#">ホーム</a></li>
+          <li><a href="#">Windows</a></li>
+          <li><a href="#">PCトラブル</a></li>
+          <li><a href="#">便利ツール</a></li>
+          <li><a href="#">プロフィール</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="intro">
-      <h2>このサイトについて</h2>
-      <p>
-        このサイトでは、Windowsのトラブルやパソコン操作で困ったときの対処法を、
-        できるだけやさしく整理して紹介していきます。
+  <!-- メインビジュアル -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-label">PC初心者にも分かりやすく</p>
+      <h1>Windowsやパソコンの困りごとを<br>やさしく解決するブログ</h1>
+      <p class="hero-text">
+        Windowsアップデート、PCの不具合、設定方法などを、手順付きで分かりやすく解説します。
       </p>
-    </section>
+    </div>
+  </section>
 
-    <section class="articles">
-      <h2>記事一覧</h2>
-      <ul>
-        <li><a href="#">Windows Update が終わらないときの対処法</a></li>
-        <li><a href="#">パソコンの動作が重いときに確認したいこと</a></li>
-        <li><a href="#">インターネットにつながらないときの基本チェック</a></li>
-      </ul>
-    </section>
-  </main>
+  <!-- 全体レイアウト -->
+  <div class="container">
 
-  <footer>
-    <p>© 2026 nozblog</p>
+    <!-- メインコンテンツ -->
+    <main class="main-content">
+
+      <section class="section-block">
+        <div class="section-title-area">
+          <h2>新着記事</h2>
+          <p>最近公開した記事</p>
+        </div>
+
+        <div class="article-grid">
+
+          <article class="article-card">
+            <a href="#">
+              <img src="https://placehold.jp/600x340.png?text=Windows+Update" alt="Windowsアップデートの記事画像">
+              <div class="article-body">
+                <span class="category">Windows</span>
+                <h3>Windowsアップデートが終わらないときの対処法</h3>
+                <p>更新が進まない、再起動を繰り返す場合に確認したいポイントを解説します。</p>
+                <time datetime="2026-04-24">2026年4月24日</time>
+              </div>
+            </a>
+          </article>
+
+          <article class="article-card">
+            <a href="#">
+              <img src="https://placehold.jp/600x340.png?text=PC+Slow" alt="パソコンが重い記事画像">
+              <div class="article-body">
+                <span class="category">PCトラブル</span>
+                <h3>パソコンが重いときに最初に確認すること</h3>
+                <p>不要なアプリ、容量不足、起動時の設定など、基本の確認方法をまとめました。</p>
+                <time datetime="2026-04-20">2026年4月20日</time>
+              </div>
+            </a>
+          </article>
+
+          <article class="article-card">
+            <a href="#">
+              <img src="https://placehold.jp/600x340.png?text=Clipboard" alt="クリップボードの記事画像">
+              <div class="article-body">
+                <span class="category">便利ツール</span>
+                <h3>クリップボード履歴を使って作業効率を上げる方法</h3>
+                <p>コピー履歴を活用して、同じ文章を何度も入力する手間を減らします。</p>
+                <time datetime="2026-04-18">2026年4月18日</time>
+              </div>
+            </a>
+          </article>
+
+          <article class="article-card">
+            <a href="#">
+              <img src="https://placehold.jp/600x340.png?text=Error" alt="エラー対処の記事画像">
+              <div class="article-body">
+                <span class="category">エラー対処</span>
+                <h3>よくあるWindowsエラーの原因と対処法</h3>
+                <p>突然表示されるエラーに対して、落ち着いて確認する手順を紹介します。</p>
+                <time datetime="2026-04-15">2026年4月15日</time>
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-title-area">
+          <h2>カテゴリー</h2>
+          <p>目的別に記事を探す</p>
+        </div>
+
+        <div class="category-list">
+          <a href="#">Windowsアップデート</a>
+          <a href="#">PCが重い</a>
+          <a href="#">エラー対処</a>
+          <a href="#">便利ツール</a>
+          <a href="#">初心者向け設定</a>
+          <a href="#">セキュリティ</a>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- サイドバー -->
+    <aside class="sidebar">
+
+      <section class="sidebar-box">
+        <h2>よく読まれている記事</h2>
+        <ul class="side-article-list">
+          <li>
+            <a href="#">
+              <span class="rank">1</span>
+              Windowsアップデートが終わらないときの対処法
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="rank">2</span>
+              パソコンが重いときに確認すること
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="rank">3</span>
+              Wi-Fiにつながらないときの基本確認
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="rank">4</span>
+              クリップボード履歴の使い方
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="sidebar-box">
+        <h2>最新の記事</h2>
+        <ul class="latest-list">
+          <li><a href="#">Windowsアップデートが終わらないときの対処法</a></li>
+          <li><a href="#">パソコンが重いときに最初に確認すること</a></li>
+          <li><a href="#">クリップボード履歴を使う方法</a></li>
+          <li><a href="#">よくあるWindowsエラーの対処法</a></li>
+        </ul>
+      </section>
+
+      <section class="sidebar-box profile-box">
+        <h2>運営者</h2>
+        <p>
+          WindowsやPCの困りごとを、初心者にも分かりやすく解説しています。
+        </p>
+      </section>
+
+    </aside>
+
+  </div>
+
+  <!-- フッター -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 のずブログ All Rights Reserved.</p>
+    </div>
   </footer>
+
 </body>
 </html>
